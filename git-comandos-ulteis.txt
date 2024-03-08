@@ -68,6 +68,14 @@ repositório. Mas também é possível salvar outros arquivos .gitignore
 subpastas do repositório, para indicar o que deve ser ignorado por
 cad asubpasta. 
 
-como remover arquivos da área de stage
-git
+comando para remover arquivos da área de stage:
+git reset
 
+comandos em sequencia para desfazer modificações não salvas:
+git reset
+git clean -df
+git checkout -- .
+
+comandos em sequencia para desfazer o último commit sem desfazer as modificações nos arquivos:
+git status
+git reset --soft HEAD~1
