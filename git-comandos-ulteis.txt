@@ -1,0 +1,73 @@
+git init
+Inicia um novo repositório local 
+
+git add .
+Adiciona todos os arquivos do projeto ao repositório local
+
+git add <nome-do-arquito> 
+Adiciona determinado arquivo do projeto ao repositório local 
+
+git status
+Vai mostrar o status do projeto no repositório local
+
+git commit -m '<nome-do-meu-commit>' 
+Vai salvar as alterações do projeto no repositório local
+
+git branch -M main
+Somente para novos projetos, vai trocar a branch do meu projeto para
+Main se no caso for Master
+
+git remote add origin <origin-do-repositorio-remoto>
+Somente para novos projetos, vai associar o meu repositório local do projeto
+com o repositório remoto que tá hospedado de preferencia no github
+
+git push -u origin main
+Somente pra novos projetos, vai enviar as modificações do repositório local 
+para o repositório remoto
+
+git push
+Vai enviar as modificações do repositório local
+para o repositório remoto
+
+café com leite pra enviar uma modificação ao repositório remoto:
+git add .
+git commit -m '<minha-msg>'
+git push
+
+git clone <url-do-repositorio-remoto>
+Vai clonar um repositorio remoto para minha máquina local, ou seja
+vai se tornar um repositório local porquet tá na minha máquina
+
+git log
+Vai mostrar o histórico completo de versões do me projeto
+
+git log --oneline
+Vai mostrar o histórico de versões do me projeto muito mais resumidas que o 
+comando git log
+
+git reset
+Vai tirar os arquivos da area de state feita pelo git add . 
+
+git checkout <id-do-commit> ou git checkout HEAD~<numero-commit>, exemplo HEAD~1 (penúltimo commmit) HEAD~2 (antepenúltimo commmit).
+Usado para modificar a branch do repositório local para o 
+o commit especifico
+
+git clean -df
+É usado para remover todos os arquivos não rastreados e diretórios vazios no meu repositório local
+
+git clean -f
+É usado pra remover apenas arquivos não rastreados no meu repositório local
+
+git checkout -- .
+Usado para limpar modificações no meu repositório local 
+
+.gitignore
+É um arquivo que indica o que não deve ser salvo pelo Git.
+gralmente o arquivo .gitignore fica salvo na pasta principal do
+repositório. Mas também é possível salvar outros arquivos .gitignore 
+subpastas do repositório, para indicar o que deve ser ignorado por
+cad asubpasta. 
+
+como remover arquivos da área de stage
+git
+
